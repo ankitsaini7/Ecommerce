@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white">
+    <div id="payment-frame" class="m-2 p-4 w-90 border border-black">
+        <h1 class="text-xl font-bold m-2">PAYMENT</h1>
+        <div id="order-summary" class="m-2 p-2 border border-black"></div>
+        <div id="payment-form" class="m-2 p-2 border border-black flex flex-col gap-2">
+            <input type="text" id="cardName" placeholder="Name on card" class="border border-black p-1">
+            <input type="text" id="cardNumber" placeholder="Card number" class="border border-black p-1">
+            <input type="text" id="cardExpiry" placeholder="MM/YY" class="border border-black p-1">
+            <input type="text" id="cardCvv" placeholder="CVV" class="border border-black p-1">
+            <button id="payBtn" class="m-1 p-2 border border-black bg-green-500 text-white">PAY NOW</button>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>
